@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="page1.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="home_page" class="container-fluid mt-0 text-bg-dark">
+        <div class="container-fluid w-100 px-0 overflow-hidden">
+            <video autoplay class=" w-100 px-0 " muted="true" loop poster="video.jpg" id="myVideo">
+                <source src="/VIDEOS/avatar-2-the-way-of-water-trailer-2-james-c.mp4" type="video/mp4">
+            </video>
+            <div class="card-img-overlay pt-5 m-5">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+                <button onclick="sound()" class="btn btn-dark"><i class="bi bi-soundwave"></i></button> 
+              </div>
+        </div>
+        <!-- movie line 1 -->
+        <h3>Recently Added</h3>
+        <div class="row row-cols-2 row-cols-md-6 g-3">
+          <div class="col">
+            <div class="card">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWz4N8_02ex18eLHxXrFUkJATvNkKmmWiEXtqN6ItQwjhczvYRPDrMBUWyJDSjZrsZHyJ-l2lnwgImXEl8_V6KuutVZ9HbMaALo1146RcMdGAN-3AHfqlpzY-yZUjURD_h17egSJaEHOwX1xTv6pjVj_cybtWhdoLQv5hVSr16VXayQsG51JiIw8kUcIXw8_Yke4U27f6uyIa-kqf3YWyYMFetK4E7JK.jpg?r=676" class="card-img-top">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe1z0tjKqLo3JgLVVYD5YiTAEI20Z-RQl_D7ncXLgWnPh76IA1aZZJFfVWEDV4VKVtaqfP3gdzVwL_0W_3CKgwFJqR9TswHHgxfLn0zeC7ZKh-PG-5H0yLnuFDtJspcMmOzy9yGumAkXSoRLuf_F6GTKwOSFIX504cyUnkQ_Z_0s8qxFMERODkMy3EbIPdQ.jpg?r=52b" class="card-img-top">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfMcEcwJxOPKQvzzVuOSZPnnnvEUUgzJYoYkeIWfqmOHWueCho4NyYX1NEKA1Ps1CBCTX4FjfoQnd4qSV2nR6FeTyQKXfp0Q7WIpWtUbVgY4PQsmS5o6qbqk7p2w3vfWKRG1.jpg?r=c20" class="card-img-top">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbvwr2yzszrrQesxPZ8QPdbjQ6pSQa0POnbAv0KvUuH2LPoomcTtzXV3Xnbe7DTSRhPltCRZS5CbO08HG9RLsfORWXDFA7YVDYpD2ouZ9GsQsBr_vuC7CH9QbfaLiu8ubik6.jpg?r=e5e" class="card-img-top">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWBHigbubrAt05TeS8l0nfrmCuJYy4G6aJwGowj5pCGolddDKfm9OkUFd6PGJfHlCxl-CsTiMy2jWcuIiFKM4IH7RruJrsrJGwcjsUbu1QaaQFrxWJskOh-QOUtnZ8DPA59f.jpg?r=b3f" class="card-img-top">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUo5OYD2lih39bsHpptGyjvoRHvfyi0mhU1MmaSnWAacG4FAbomWRYEE-ETbfJaMZp0TDFFnRrXTLKO_GYcmEl5ojVFTGKTZaCkSbWoY8X6lNoEgU6lC5e7zwAV2vynjDR1IO1r2uohWphivv5uMh_6LDh5aDV3Z7S7cXZFdrHEuPgC28ih70b4fgvEcD1k.jpg?r=b61" class="card-img-top">
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mt-5">Trending Now</h3>
+        <div class="row row-cols-2 row-cols-md-6 g-3">
+          <div class="col">
+            <div class="card">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABau4RGWBEMvJ3Iy9LWJxTUogVilVt9dN6eorPv_V9M6tIMOtxyRMiAMoB3p8OnH0j_QcBz9FEKsNX_sUlxtoliXLcr3tcFghXAuOoo7Y8nrbk65RmO0ruvfVonvnji3_aHeC__x3E3WJEx9UhaD7jgXFDHvU4Nr-JvIl9zE.jpg?r=a49" class="card-img-top">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABe9Pp4lgGbVIBGCowS9-ymX5W5aI9xQeQhTIKNO68u551vXN9Y_0NJC8sLo-IxXiY6klD3DlQRXH5E1Le2C7EUpfnCBrb100LqZgni36ipGmiaw0fmXfasSNAgCc9j3YF2fAiA.jpg?r=ee8" class="card-img-top">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABfZ59DQFEke-u5kuvqzw0UniVi41_2bPTtQqexPeVka1N9r_jd7BkAgn2hDOP1nTCx_H3l1XNB7tSZuZsfjt-4NSL1DqS2HGIrGdnPMFU7zq32BtaMedAEIZLCfpX-UW8tWkzQ.jpg?r=e79" class="card-img-top">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABZ4qxa93twISlOznccn74LJMJcZI-kJPPhxEAj8UJrWAVgcwElbhWa1V0Wf6SC4lFG-piewjE_ZP8Z8W6gXllgoxUJrgjJmSWkK6pCLqGW1IyWfnLQYKz7J0SwwyrjuY1x9xQA.jpg?r=cc9" class="card-img-top">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABZs7psXYSLfYEGsrLq_1ggY9h0iHYOEGuWz1xqQIYLBYWt0tZ4fcBJ5LY9G5cRilQ1Zs1ZpWYuM6NrhG2EMwj5_DQ_USKVrpYTbPtDX3RthSTryx7-AKl6U2SvdfH9TU1f2zxA.jpg?r=6ed" class="card-img-top">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABShHP6o11dtZZgfmWCnxoKmXmjBQ7WzkEq7VC9XwnpSkmxcKEGEDSOJCqbG7XsxKoOvXn_n9LqSSzBul3YQ-Sij6LDHsOcqVFILqTdTAdGn5jw9SbLi9Gf_kLHN5XraMsu8ExomMBArCPOt5pf2_zamj1s0BQfUclaT_EIU.jpg?r=1fe" class="card-img-top">
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mt-5">NEW FOR KIDS</h3>
+        <div class="row row-cols-2 row-cols-md-6 g-3">
+          <div class="col">
+            <div class="card">
+                <a href="https://www.netflix.com/watch/81397439?trackId=14185175">
+              <img src="https://occ-0-4547-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU8p2zl49U1SNHKuGtEOnuxQ0af_e_CfJcFNIQu_B2HPrMgWcEmSQX4WYhvVo9jvv9CmjA0oft0IMcvrpsTg9PCVVJfv22rdV6Q.webp?r=a2a" class="card-img-top">
+            </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+                <a href="https://www.netflix.com/watch/81312563?trackId=253950199&tctx=4%2C2%2Cdd65fcdb-6af6-45d6-bd77-3f537fb39f23-123892394%2CGPS_9D44A07F0F0DC7292D4821ABCD8E7C-C0C1A6E17AF782-D955A13685_p_1659166485048%2CGPS_9D44A07F0F0DC7292D4821ABCD8E7C_p_1659166485048%2C%2C%2C%2C81312563">
+              <img src="https://occ-0-4547-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS1NbyNXPxtQPYaU5YoFokw04nCUE6F2C2fkCjmlRxwHgHRn5vxw9cMujXPCWBSxD0cLwpGXtcLQKsLVIt_WBawllg45ntBpB492RG39xreYie47nVYMudCoOBXV7FmBkkLOBWx0069-k8oMoatuXwudBltE6NSw2jyXimaHXUbPzaCwatD33G0bWNFD6ds.jpg?r=1d4" class="card-img-top">
+            </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+                <a href="https://www.netflix.com/watch/70244169?trackId=14185175">
+              <img src="https://occ-0-4547-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYOeMGQjQrGhBpH-e58x7YGrd8B2QkDcXeXbPU6Pz_5fd6ymN1xm1G_LqquYOX9bxnZDXPb4-OFmo3NQxo01FvBH-Dl88_HelB0.webp?r=b59" class="card-img-top">
+            </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+                <a href="https://www.netflix.com/watch/70109893?trackId=253950199&tctx=4%2C1%2Cdd65fcdb-6af6-45d6-bd77-3f537fb39f23-123892394%2CGPS_9D44A07F0F0DC7292D4821ABCD8E7C-C0C1A6E17AF782-D955A13685_p_1659166485048%2CGPS_9D44A07F0F0DC7292D4821ABCD8E7C_p_1659166485048%2C%2C%2C%2C70109893">
+              <img src="https://occ-0-4547-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQcZc9vtlo1h3naEuJ-6Nl5nGiJcDGXZaJDXt68mRhLcG7zMa-kz0TYzHHMxuQlDgh57WiEdaRP4TzS_oMhf3y3TaVXZ_p-i9hQ.webp?r=ca5" class="card-img-top">
+            </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+                <a href="https://www.netflix.com/watch/81198528?trackId=15062816">
+              <img src="https://occ-0-4547-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeVhYfONtRIh-19b6livLuqVxkdrQZ-OyDlsncuI9RspEyowZi0qAacoEkszpVgNYs5sgdgJOIuwcM6tDzkIWiTgMHRq0R27y74.webp?r=6c2" class="card-img-top">
+            </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+                <a href="https://www.netflix.com/watch/81452640?trackId=15062816">
+              <img src="https://occ-0-4547-1167.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfY5iCno2Qi6L-86etpy6Puf4fElHS5vuBHExxsbXzzINMzCj1F7pBG6bS_GYpWlgrta7NMAQHz-Jk11c4wtFT6FUabmgopDPpSJthrdKPpj3MF2AEzdc7glSB3pBXbnkjKx.jpg?r=452" class="card-img-top">
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="boxart-size-7x10 boxart-container boxart-rounded">
+            <svg id="rank-1" width="100%" height="100%" viewBox="-20 0 70 154" class="svg-icon svg-icon-rank-1 top-10-rank">
+                <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"></path>
+            </svg>
+            <img class="boxart-image-in-padded-container" src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABfGozDAf278YI3yWT9X9kc_4p_v1rbz-lLqZPnNdJQrLOL_vZtYeDdj2gu6B6N4j0H6eX8kRDeH4R4Je3y7J7sicQh2PXtPWTMBga5oNj1QoH2TYrdL5_nkCSPyu5HzQpgxJYA.jpg?r=b60">
+            <div class="fallback-text-container" aria-hidden="true">
+                <p class="fallback-text">The Gray Man</p>
+        </div> -->
+
+        <div class="row row-cols-2 row-cols-md-10 d-flex">
+          <div class="col-10 col-md-2">
+            <a href="https://www.netflix.com/watch/81160697?trackId=262617323&tctx=4%2C0%2Ca096926f-8921-4ece-ad29-bc800b948f40-9157370%2CGPS_9C07A97EC9C5ABDEF97468484E44A3-F4694D00993BC3-61659558DB_p_1659111451938%2CGPS_9C07A97EC9C5ABDEF97468484E44A3_p_1659111451938%2C%2C%2C%2C81160697" aria-label="The Gray Man" aria-hidden="false">
+              <svg id="rank-1" width="50%" height="50%" viewBox="-20 0 70 154" class="svg-icon svg-icon-rank-1 top-10-rank">
+                <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"></path>
+              </svg>
+              <img class="boxart-image-in-padded-container" src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABbAOAoXkIVLfagoZEcJuZRnqQHBtoMvXsemVtdY-AXSdPtGCr7m1peuy4FVbp7o6Yydr94KQ4LYktbI6H86G-kePvVIZf-PVDMoHwiSL2GX2Sd4xH5WWLQJQWmw7kgNJ5GCjXg.jpg?r=e22">
+                <p class="fallback-text">Keep Breathing</p>
+            </a>
+          </div>
+            <div class="col-10 col-md-2">
+                <a href="https://www.netflix.com/watch/81259570?trackId=262617323&tctx=4%2C1%2Ca096926f-8921-4ece-ad29-bc800b948f40-9157370%2CGPS_9C07A97EC9C5ABDEF97468484E44A3-F4694D00993BC3-61659558DB_p_1659111451938%2CGPS_9C07A97EC9C5ABDEF97468484E44A3_p_1659111451938%2C%2C%2C%2C81259570" aria-label="Recurrence" aria-hidden="false">
+                    <svg id="rank-2" width="50%" height="50%" viewBox="0 0 80 154" class="svg-icon svg-icon-rank-2 top-10-rank">
+                        <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.72 152H113v-30.174H50.484l4.355-3.55 29.453-24.012c5.088-4.124 9.748-8.459 13.983-13.004 4.16-4.464 7.481-9.339 9.972-14.629 2.449-5.203 3.678-11.113 3.678-17.749 0-9.428-2.294-17.627-6.875-24.645-4.597-7.042-10.941-12.494-19.07-16.376C77.803 3.957 68.496 2 58.036 2 47.591 2 38.37 4.023 30.347 8.06c-8.015 4.032-14.457 9.578-19.352 16.654-4.492 6.493-7.389 13.803-8.693 21.952h34.055c1.236-3.52 3.398-6.52 6.459-8.97 3.54-2.834 8.277-4.224 14.147-4.224 5.93 0 10.552 1.537 13.76 4.681 3.181 3.12 4.791 7.024 4.791 11.594 0 4.151-1.16 7.934-3.468 11.298-2.192 3.194-5.987 7.124-11.405 11.84L3.72 122.465V152z"></path>
+                    </svg>
+                    <img class="boxart-image-in-padded-container" src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABawbyfRhp99In9-VfZ8buwfOFfiEk0Zq9uAsPlulYpKD1YuQfMoS5rV9S6tMcIeX0drmQygHwOYhbPoe02uV8JpyLrwN6u0Y-o6K9Ei7X1u7O74G9M50uE9k5sZjJ7zlDLWEOw.jpg?r=edd">
+                        <p class="fallback-text">Recurrence</p>
+                </a>
+            </div>
+            <div class="col-10 col-md-2">
+                <a href="https://www.netflix.com/watch/81018682?trackId=262617323&tctx=4%2C2%2Ca096926f-8921-4ece-ad29-bc800b948f40-9157370%2CGPS_9C07A97EC9C5ABDEF97468484E44A3-F4694D00993BC3-61659558DB_p_1659111451938%2CGPS_9C07A97EC9C5ABDEF97468484E44A3_p_1659111451938%2C%2C%2C%2C81018682" aria-label="The Sea Beast" aria-hidden="false"><div class="boxart-size-7x10 boxart-container boxart-rounded">
+                    <svg id="rank-3" width="50%" height="50%" viewBox="0 0 80 154" class="svg-icon svg-icon-rank-3 top-10-rank">
+                        <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.809 41.577h33.243c1.3-2.702 3.545-4.947 6.674-6.72 3.554-2.015 7.83-3.01 12.798-3.01 5.555 0 10.14 1.11 13.723 3.376 3.839 2.427 5.782 6.283 5.782 11.315 0 4.553-1.853 8.395-5.473 11.38-3.547 2.926-8.18 4.37-13.821 4.37H41.44v28.366h16.77c5.572 0 10.275 1.227 14.068 3.711 4.02 2.633 6.071 6.581 6.071 11.616 0 5.705-1.943 9.975-5.853 12.562-3.658 2.42-8.292 3.61-13.863 3.61-5.205 0-9.82-.94-13.827-2.836-3.698-1.75-6.32-4.272-7.785-7.529H2.33c2.096 12.089 7.761 21.65 17.028 28.78C29.242 148.175 42.594 152 59.476 152c10.706 0 20.175-1.783 28.42-5.337 8.185-3.528 14.575-8.486 19.208-14.884 4.595-6.346 6.896-13.938 6.896-22.837 0-6.952-1.93-13.494-5.81-19.666-3.815-6.07-9.68-10.367-17.683-12.908l-5.46-1.735 5.353-2.04c6.659-2.538 11.667-6.338 15.083-11.412 3.431-5.096 5.142-10.806 5.142-17.181 0-8.471-2.262-15.778-6.787-21.985-4.574-6.275-10.7-11.17-18.408-14.696C77.683 3.775 69.109 2 59.687 2 44.084 2 31.515 5.816 21.91 13.415c-9 7.119-15.025 16.486-18.101 28.162z"></path>
+                    </svg>
+                    <img class="boxart-image-in-padded-container" src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABdlqeLEvk4bxt-OXg5pcIko30Pl7lBWMfjtImJ-UitsDVobQw9lzvlKoh7MOAetCiGajrb3L-6aR_EvM5EjxdruxdPzluTVeFYPtdCnOl7EmBfIcftPFhyRTscfOVNB33Kphgw.jpg?r=41e" alt="">
+                        <p class="fallback-text">The Sea Beast</p>
+                </a>
+            </div>
+            <div class="col-10 col-md-2">
+                <a href="https://www.netflix.com/watch/81410649?trackId=262617323&tctx=4%2C3%2Ca096926f-8921-4ece-ad29-bc800b948f40-9157370%2CGPS_9C07A97EC9C5ABDEF97468484E44A3-F4694D00993BC3-61659558DB_p_1659111451938%2CGPS_9C07A97EC9C5ABDEF97468484E44A3_p_1659111451938%2C%2C%2C%2C81410649" aria-label="Persuasion" aria-hidden="false">
+                    <svg id="rank-4" width="50%" height="50%" viewBox="0 0 81 154" class="svg-icon svg-icon-rank-4 top-10-rank">
+                        <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M72 152h35.333v-30.977H128V92.497h-20.667V2H69.89L2 92.712v28.311h70V152zM36.202 92.188l35.93-47.998v47.998h-35.93z"></path>
+                    </svg>
+                    <img class="boxart-image-in-padded-container" src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABeEvkRER4apPxlSJfcoDDDQm2K99-Ogf2aWzTkMQUU983dWnGrxg63hXMC5m0gHHnJuTRjhNrovJxE_J0zxC3pNCtF_nKfMdFJ35P8ceS1c-MuFPa5cQv0HkS--dmqLfhtEz_Q.jpg?r=cf3" alt="">
+                        <p class="fallback-text">Persuasion</p>
+                </a>
+            </div>
+            <div class="col-10 col-md-2">
+                <a href="https://www.netflix.com/watch/81578248?trackId=262639554&tctx=4%2C4%2Ca096926f-8921-4ece-ad29-bc800b948f40-9157370%2CGPS_9C07A97EC9C5ABDEF97468484E44A3-F4694D00993BC3-61659558DB_p_1659111451938%2CGPS_9C07A97EC9C5ABDEF97468484E44A3_p_1659111451938%2C%2C%2C%2C81578248" aria-label="Image of Victory" aria-hidden="false">
+                    <svg id="rank-5" width="50%" height="50%" viewBox="0 0 81 154" class="svg-icon svg-icon-rank-5 top-10-rank">
+                        <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M105.588 32.174V2H13.534l-8.3 88.357h32.463c2.145-2.362 4.866-4.254 8.143-5.675 3.585-1.554 7.543-2.328 11.859-2.328 6.247 0 11.418 1.745 15.418 5.255 4.061 3.564 6.104 8.37 6.104 14.265 0 6.041-2.044 10.89-6.121 14.387-3.999 3.43-9.162 5.132-15.401 5.132-4.299 0-8.17-.694-11.601-2.095-3.11-1.268-5.577-2.946-7.368-5.042H2.592c3.308 11.593 9.782 20.623 19.46 27.164C32.472 148.464 45.64 152 61.602 152c10.12 0 19.294-1.99 27.548-5.966 8.198-3.949 14.711-9.718 19.572-17.335 4.844-7.59 7.278-16.95 7.278-28.123 0-9.182-2.013-17.314-6.032-24.431-4.02-7.118-9.514-12.7-16.51-16.775-6.99-4.072-14.849-6.109-23.612-6.109-11.06 0-20.099 3.483-27.234 10.461l-3.892 3.806 3.273-35.354h63.595z"></path>
+                    </svg>
+                    <img class="boxart-image-in-padded-container" src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABQg8K4TKzXJRptsLfBqnRGRdYj-Tjws5cn6w3d0eMpybpH7yGX3DBQVv1wPpEsrs4z2Mn9REi94KITcxKiT_yOxluQbYwt3gM9wl.webp?r=355">
+                        <p class="fallback-text">Image of Victory</p>
+                </a>
+            </div>
+            <div class="col-10 col-md-2">
+                <a href="https://www.netflix.com/watch/80121839?trackId=262617323&tctx=4%2C5%2Ca096926f-8921-4ece-ad29-bc800b948f40-9157370%2CGPS_9C07A97EC9C5ABDEF97468484E44A3-F4694D00993BC3-61659558DB_p_1659111451938%2CGPS_9C07A97EC9C5ABDEF97468484E44A3_p_1659111451938%2C%2C%2C%2C80121839" aria-label="Smurfs: The Lost Village" tabindex="-1" aria-hidden="true">
+                    <svg id="rank-6" width="50%" height="50%" viewBox="0 0 81 154" class="svg-icon svg-icon-rank-6 top-10-rank">
+                        <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M79.482 38.192h35.551c-3.284-10.945-8.963-19.573-17.048-25.938C89.323 5.434 77.531 2 62.545 2 50.756 2 40.35 4.86 31.277 10.577c-9.064 5.712-16.198 14.09-21.412 25.178C4.63 46.893 2 60.425 2 76.365c0 14.416 2.356 27.344 7.059 38.798 4.667 11.368 11.573 20.34 20.734 26.956C38.904 148.7 50.225 152 63.816 152a61.513 61.513 0 0019.922-3.278 53.546 53.546 0 0017.378-9.792c5.154-4.33 9.255-9.64 12.314-15.947 3.042-6.273 4.57-13.556 4.57-21.868 0-8.812-2.062-16.636-6.182-23.51-4.134-6.897-9.643-12.293-16.55-16.212-6.905-3.917-14.48-5.874-22.76-5.874-14.546 0-25.34 4.55-32.569 13.63l-4.003 5.03.443-6.413c.874-12.636 3.56-21.85 8.168-27.654 4.69-5.907 10.885-8.9 18.421-8.9 4.26 0 7.826.734 10.685 2.24 2.445 1.287 4.396 2.867 5.829 4.74zM62.605 123c-5.825 0-10.902-1.894-15.136-5.655C43.173 113.528 41 108.603 41 102.71c0-5.881 2.164-10.864 6.44-14.818C51.674 83.975 56.762 82 62.604 82c5.847 0 10.906 1.98 15.074 5.905C81.878 91.859 84 96.837 84 102.71c0 5.885-2.131 10.805-6.35 14.622-4.167 3.77-9.214 5.668-15.045 5.668z"></path>
+                    </svg>
+                    <img class="boxart-image-in-padded-container" src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABeRp9gjFu--cV6GFT4pLfFSspWY62-hhU5XuSPk_5i_yq61I2zWgh2Gc8Ktro15VIiTAhWB__PK3PLbjt5kkcBfQwVG1yFK2eVym.webp?r=3ed">
+                        <p class="fallback-text">Smurfs: The Lost Village</p>
+                </a>
+            </div>
+            <div class="col-10 col-md-2">
+                <a href="https://www.netflix.com/watch/81010971?trackId=262617323&tctx=4%2C6%2Ca096926f-8921-4ece-ad29-bc800b948f40-9157370%2CGPS_9C07A97EC9C5ABDEF97468484E44A3-F4694D00993BC3-61659558DB_p_1659111451938%2CGPS_9C07A97EC9C5ABDEF97468484E44A3_p_1659111451938%2C%2C%2C%2C81010971" aria-label="Ad Astra" tabindex="-1" aria-hidden="true">
+                    <svg id="rank-7" viewBox="0 0 78 154" width="50%" height="50%" class="svg-icon svg-icon-rank-7 top-10-rank">
+                        <path stroke="#595959" stroke-width="4" d="M113,2 L2,2 L2,33.4022989 L75.9665929,33.4022989 L21.22571,152 L60.28102,152 L113,32.7672283 L113,2 Z" stroke-linejoin="square"></path>
+                    </svg>
+                    <img class="boxart-image-in-padded-container" src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABTyFTPjHsSPZgTwm8mykZVtb3TyssSJCgotk-PgpOc4uOQYX_8i2Hs_wJxvAMy29QdoEKlSKI2qcauSgKuc35wN4_5WLHw8N9Vf0.webp?r=818">
+                        <p class="fallback-text">Ad Astra</p>
+                </a>
+            </div>
+            <div class="col-10 col-md-2">
+                <a href="https://www.netflix.com/watch/81251628?trackId=262617323&tctx=4%2C7%2Ca096926f-8921-4ece-ad29-bc800b948f40-9157370%2CGPS_9C07A97EC9C5ABDEF97468484E44A3-F4694D00993BC3-61659558DB_p_1659111451938%2CGPS_9C07A97EC9C5ABDEF97468484E44A3_p_1659111451938%2C%2C%2C%2C81251628" aria-label="The Man from Toronto" tabindex="-1" aria-hidden="true">
+                    <svg id="rank-8" width="50%" height="50%" viewBox="0 0 77 154" class="svg-icon svg-icon-rank-8 top-10-rank">
+                        <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M59.5 152c11.335 0 21.358-1.72 30.077-5.15 8.637-3.397 15.361-8.258 20.213-14.586 4.805-6.267 7.21-13.876 7.21-22.899 0-7.326-2.261-14.07-6.813-20.29-4.548-6.214-10.837-10.658-18.922-13.35l-5.4-1.799 5.338-1.975c7.238-2.678 12.572-6.683 16.066-12.018 3.53-5.388 5.284-11.178 5.284-17.414 0-7.912-2.133-14.839-6.405-20.84-4.3-6.042-10.403-10.825-18.345-14.351C79.816 3.78 70.386 2 59.5 2S39.184 3.781 31.197 7.328c-7.942 3.526-14.044 8.309-18.345 14.351-4.272 6.001-6.405 12.928-6.405 20.84 0 6.236 1.755 12.026 5.284 17.414 3.494 5.335 8.828 9.34 16.066 12.018l5.338 1.975-5.4 1.798c-8.085 2.693-14.374 7.137-18.922 13.351C4.261 95.295 2 102.04 2 109.365c0 9.023 2.405 16.632 7.21 22.899 4.852 6.328 11.576 11.19 20.213 14.586 8.72 3.43 18.742 5.15 30.077 5.15zm.5-89c-5.6 0-10.334-1.515-14.125-4.56C41.985 55.313 40 51.183 40 46.21c0-5.244 1.976-9.518 5.875-12.65C49.666 30.515 54.4 29 60 29s10.334 1.515 14.125 4.56C78.025 36.694 80 40.968 80 46.212c0 4.973-1.985 9.103-5.875 12.228C70.334 61.485 65.6 63 60 63zm-.5 62c-6.255 0-11.556-1.613-15.836-4.856-4.41-3.343-6.664-7.816-6.664-13.25 0-5.298 2.258-9.698 6.664-13.038C47.944 90.613 53.245 89 59.5 89c6.255 0 11.556 1.613 15.836 4.856 4.406 3.34 6.664 7.74 6.664 13.038 0 5.434-2.254 9.907-6.664 13.25C71.056 123.387 65.755 125 59.5 125z"></path>
+                    </svg>
+                    <img class="boxart-image-in-padded-container" src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABQ9X5hmntcbXeCYYX0aV5YSe1-XiBXzYqU5JJhWqkv1OoJRGMCk936N2xOSROuwW6nIk6FfR9U17kVXXS-TvGixPP-CaLyl1fTi6e1oI9V-6h2rz0H_f9kL-aUnnturz8Onneg.jpg?r=05f" alt="">
+                        <p class="fallback-text">The Man from Toronto</p>
+                </a>
+            </div>
+            <div class="col-10 col-md-2">
+                <a href="https://www.netflix.com/watch/81179064?trackId=262639554&tctx=4%2C9%2Ca096926f-8921-4ece-ad29-bc800b948f40-9157370%2CGPS_9C07A97EC9C5ABDEF97468484E44A3-F4694D00993BC3-61659558DB_p_1659111451938%2CGPS_9C07A97EC9C5ABDEF97468484E44A3_p_1659111451938%2C%2C%2C%2C81179064" aria-label="Never Stop Dreaming: The Life and Legacy of Shimon Peres" tabindex="-1" aria-hidden="true">
+                    <svg id="rank-9" viewBox="0 0 71 154" width="50%" height="50%" class="svg-icon svg-icon-rank-9 top-10-rank">
+                        <path stroke="#595959" stroke-width="4" d="M40.0597376,115.807692 L4.47328474,115.807692 C7.45109332,126.586242 13.4362856,135.15497 22.4670906,141.582071 C32.2129251,148.518048 44.5640134,152 59.5759717,152 C78.2141671,152 92.5105725,145.697944 102.6454,133.074799 C112.853557,120.360322 118,101.543854 118,76.5769231 C118,62.1603327 115.678843,49.3016297 111.046669,37.9886125 C106.453069,26.7698049 99.6241767,17.9802976 90.5435117,11.5767831 C81.5017862,5.20072813 70.1375399,2 56.3957597,2 C49.4158116,2 42.68229,3.15952329 36.1849549,5.47966815 C29.7045526,7.79376647 23.8782903,11.1932931 18.6948526,15.6846002 C13.5316746,20.1583529 9.45923583,25.508367 6.46782377,31.7491046 C3.4928156,37.95562 2,45.0644366 2,53.0961538 C2,61.9117395 4.02797967,69.7019439 8.0788911,76.5056791 C12.1434539,83.3323424 17.5832537,88.6925139 24.4218542,92.6108203 C31.2518358,96.5241882 38.8590885,98.4807692 47.2791519,98.4807692 C55.0853554,98.4807692 61.6095996,97.3619306 66.8547126,95.1478231 C72.0569983,92.9517941 76.4513169,89.5970183 80.0605818,85.0622151 L84.0584687,80.039134 L83.6207883,86.4440446 C82.74746,99.2241219 80.0984349,108.438199 75.5533003,114.10687 C70.9310132,119.871766 64.7726909,122.788462 57.2438163,122.788462 C52.8691399,122.788462 49.1904302,122.100251 46.212535,120.692834 C43.5930338,119.454801 41.5307848,117.825945 40.0597376,115.807692 Z M57.5,31 C63.3657106,31 68.4419893,32.9364861 72.6299874,36.7826253 C76.8609583,40.6682294 79,45.6186068 79,51.5 C79,57.3813932 76.8609583,62.3317706 72.6299874,66.2173747 C68.4419893,70.0635139 63.3657106,72 57.5,72 C51.6342894,72 46.5580107,70.0635139 42.3700126,66.2173747 C38.1390417,62.3317706 36,57.3813932 36,51.5 C36,45.6186068 38.1390417,40.6682294 42.3700126,36.7826253 C46.5580107,32.9364861 51.6342894,31 57.5,31 Z" stroke-linejoin="square"></path>
+                    </svg>
+                    <img class="boxart-image-in-padded-container" src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABb2jNwiWPZvK2-01LgoM4TIOOl0aSUS4x9RbMuBlnWZyDr1TFSn5W5g6Jt6PXWV355h892Lvv6vNhOW47InRLUY8AInMml-PqM-iszOhBmYLJkXo1Esqo8scd-VCnd0xEh8QkA.jpg?r=91b" alt="">
+                        <p class="fallback-text">Never Stop Dreaming: The Life and Legacy of Shimon Peres</p>
+                </a>
+            </div>
+            <div class="col-10 col-md-2">
+              <a href="https://www.netflix.com/watch/81160697?trackId=262617323&tctx=4%2C0%2C31472668-eef9-4d92-a003-ab9bca75ab16-33078396%2CGPS_9C07A97EC9C5ABDEF97468484E44A3-F4694D00993BC3-9AF1E146C8_p_1659207143105%2CGPS_9C07A97EC9C5ABDEF97468484E44A3_p_1659207143105%2C%2C%2C%2C81160697" aria-label="Never Stop Dreaming: The Life and Legacy of Shimon Peres" tabindex="-1" aria-hidden="true">
+                <svg id="rank-10" width="50%" height="50%" viewBox="0 0 140 154" class="svg-icon svg-icon-rank-10 top-10-rank">
+                  <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M34.757 151.55h35.869V2.976L2 19.687v30.14l32.757-8.41v110.132zm105.53 3.45c12.394 0 23.097-3.12 32.163-9.353 9.093-6.25 16.11-15.047 21.066-26.43C198.5 107.766 201 94.196 201 78.5c0-15.698-2.5-29.266-7.484-40.716-4.955-11.384-11.973-20.18-21.066-26.431C163.384 5.119 152.681 2 140.287 2c-12.393 0-23.096 3.12-32.162 9.353-9.093 6.25-16.11 15.047-21.066 26.43-4.984 11.45-7.484 25.02-7.484 40.717 0 15.698 2.5 29.266 7.484 40.716 4.955 11.384 11.973 20.18 21.066 26.431 9.066 6.234 19.769 9.353 32.162 9.353zm0-31.368c-7.827 0-13.942-4.147-18.15-12.178-4.053-7.736-6.047-18.713-6.047-32.954s1.994-25.218 6.047-32.954c4.208-8.03 10.323-12.178 18.15-12.178 7.827 0 13.943 4.147 18.15 12.178 4.053 7.736 6.048 18.713 6.048 32.954s-1.995 25.218-6.047 32.954c-4.208 8.03-10.324 12.178-18.15 12.178z"></path>
+                </svg>
+                <img class="boxart-image-in-padded-container" src="https://occ-0-3338-1167.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABV9OLs50VLtqTFEjr58rnD1il-X1c3Y-0d_Zxon96Wfy30Mj3mDeSdaIeR5yhSIn8Sy4UmG72lP9-4lt1F3f-pnBMJHVzcJ2ys3FScvUQqqrbzAecTXNsdxt_gJfJrHzzEU6dA.jpg?r=ccb">
+                <p class="fallback-text">The Gray Man</p>
+                  </a>
+              </div>
+        </div>
+        <section class="pb-0 pt-3 mt-1">
+          <div class="container d-block">
+            <div class="row">
+              <div class="col">
+                <div class="bg-dark p-3 p-sm-4 rounded-3 position-relative overflow-hidden">
+                  <div class="row">
+                    <div class="col-md-8 col-lg-6 mx-auto text-center py-5 position-relative">
+                      <!-- Title -->
+                      <h2 class="display-6 text-white">Never miss a story!</h2>
+                      <p class="text-white">Get the freshest headlines and updates sent uninterrupted to your inbox.</p>
+                      <!-- Form -->
+                      <form class="row row-cols-sm-auto g-2 align-items-center justify-content-center mt-3">
+                        <div class="col-12">
+                          <input type="email" class="form-control" placeholder="Enter your email address">
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary m-0">Subscribe</button>
+                        </div>
+                        <div class="form-text text-white opacity-6 mt-2">By subscribing you agree to our 
+                          <a href="#" class="text-decoration-underline text-reset">Privacy Policy</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="page1.js"></script>
+</body>
+</html>
