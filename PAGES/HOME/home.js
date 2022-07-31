@@ -8,8 +8,8 @@ function loadPage(event,container = document.getElementById("main_container")){
         event.preventDefault()
     let href = event.target.getAttribute('href')
     let links = {
-        '/PAGES/page1/page1.html':/PAGES/page1/page1.html,
-        '/PAGES/MOVIES/page2.html':/PAGES/MOVIES/page3.html,
+        '/SERVICE/CLASStv.js':movies(event),
+        '/PAGES/BURGERS/food.html':aBurger(event),
         '/PAGES/MOVIES/page3.html':/PAGES/MOVIES/page3.html,
     }
     console.log(links[href]())
