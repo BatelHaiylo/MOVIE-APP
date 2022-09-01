@@ -1,11 +1,11 @@
-const BurgerApi = 'https://burgers1.p.rapidapi.com/burgers'
-const Boptions = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '9f3184d9a1msh3ee4395a2c337d8p15e8f3jsnca8f5b605b6d',
-		'X-RapidAPI-Host': 'burgers1.p.rapidapi.com'
-	}
-};
+// const BurgerApi = 'https://burgers1.p.rapidapi.com/burgers'
+// const Boptions = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '9f3184d9a1msh3ee4395a2c337d8p15e8f3jsnca8f5b605b6d',
+// 		'X-RapidAPI-Host': 'burgers1.p.rapidapi.com'
+// 	}
+// };
 
 function aBurger(event) {
     event.preventDefault()

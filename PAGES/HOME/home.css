@@ -1,3 +1,16 @@
-body{
-    background-color: black !important;
-}
+.top_movie_card_overlay{
+    opacity: 0;
+    transition: .5s ease;
+  }
+  .card_con:hover .top_movie_card_overlay{
+      opacity: 1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    
+  }

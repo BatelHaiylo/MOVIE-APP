@@ -62,15 +62,35 @@ class Movies {
     }
   
   }
+
+// const encodedParams = new URLSearchParams();
+// encodedParams.append("id", "496243");
+// encodedParams.append("type", "movie");
+// encodedParams.append("country", "us");
+
+// const options = {
+// 	method: 'POST',
+// 	headers: {
+// 		'content-type': 'application/x-www-form-urlencoded',
+// 		'X-RapidAPI-Key': '9f3184d9a1msh3ee4395a2c337d8p15e8f3jsnca8f5b605b6d',
+// 		'X-RapidAPI-Host': 'gowatch.p.rapidapi.com'
+// 	},
+// 	body: encodedParams
+// };
+
+// fetch('https://gowatch.p.rapidapi.com/lookup/title/tmdb_id?id=496243&type=movie&country=us', options)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+// 	.catch(err => console.error(err));
   
-  const MoviesApi = 'https://ott-details.p.rapidapi.com/advancedsearch?start_year=1970&end_year=2020&min_imdb=6&max_imdb=7.8&genre=action&language=english&type=movie&sort=latest&page=1'
-  const Moptions = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': '9f3184d9a1msh3ee4395a2c337d8p15e8f3jsnca8f5b605b6d',
-      'X-RapidAPI-Host': 'ott-details.p.rapidapi.com'
-    }
-  };
+//   const MoviesApi = 'https://ott-details.p.rapidapi.com/advancedsearch?start_year=1970&end_year=2020&min_imdb=6&max_imdb=7.8&genre=action&language=english&type=movie&sort=latest&page=1'
+//   const Moptions = {
+//     method: 'GET',
+//     headers: {
+//       'X-RapidAPI-Key': '9f3184d9a1msh3ee4395a2c337d8p15e8f3jsnca8f5b605b6d',
+//       'X-RapidAPI-Host': 'ott-details.p.rapidapi.com'
+//     }
+//   };
   function movies(event) {
     event.preventDefault()
     return Movies.print(MoviesApi,Moptions)
